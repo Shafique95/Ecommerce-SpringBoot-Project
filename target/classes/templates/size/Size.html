@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org./1999/xhtml" xmlns:sec="http://www.w3.org./1999/xhtml">
+<head th:replace="common/header :: common-header">
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+  <div th:replace="adminHome :: navbarAdmin"> </div>
+
+<div class="container">
+<form action="/saveSize" method="post">
+<h1>Save Size </h1>
+  <div class="form-row">
+    <div class="col-md-6">
+      <input type="text" class="form-control" placeholder="size" name="value">
+    </div> 
+  </div>
+  <br>
+  <button class="btn btn-secondary">Save Size</button>
+</form>
+
+</div>
+
+
+
+  <div th:replace="common/header :: body-scripts"> </div>
+</body>
+</html>
